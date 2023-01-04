@@ -8,6 +8,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .order_card {
   font-size: 0.875rem;
@@ -16,7 +19,7 @@ body {
   border-radius: 20px;
   background-color: white;
   overflow: hidden;
-  margin: 15px;
+  margin: 0.938rem;
   justify-items: center;
   transition: 2s color ease;
   text-align: center;
@@ -35,12 +38,12 @@ body {
 
 .title {
   font-weight: 900;
-  font-size: 11px;
-  margin: 15px;
+  font-size: 0.688rem;
+  margin: 0.938rem;
 }
 .description {
   line-height: 20px;
-  padding: 0px 15px;
+  padding: 0px 0.938rem;
   color: grey;
 }
 
@@ -51,8 +54,8 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 90%;
-  border-radius: 15px;
-  margin: 20px;
+  border-radius: 0.938rem;
+  margin: 1.25rem;
 }
 .price_suscription img {
   background-color: hsl(225, 100%, 94%);
@@ -61,18 +64,18 @@ body {
 }
 
 .tipe_plan h2 {
-  padding-top: 5px;
-  font-size: 16px;
+  padding-top: 0.313rem;
+  font-size: 1rem;
   font-weight: 900;
 }
 
 .tipe_plan p {
   color: grey;
-  padding-bottom: 5px;
+  padding-bottom: 0.313rem;
 }
 
 .change_plan {
-  padding-left: 20px;
+  padding-left: 1.25rem;
   border: none;
   background-color: hsl(225, 100%, 98%);
   color: hsl(245, 64%, 42%);
@@ -87,10 +90,10 @@ body {
 .pay {
   background-color: hsl(245, 75%, 52%);
   border: none;
-  padding: 15px;
+  padding: 0.938rem;
   color: white;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.938rem;
   border-radius: 10px;
   width: 90%;
   -webkit-box-shadow: -4px 8px 15px 1px hsla(245, 75%, 52%, 0.4);
@@ -102,16 +105,22 @@ body {
 }
 
 .cancel {
-  margin: 20px;
+  margin: 1.25rem;
   width: 90%;
   border: none;
   background-color: white;
   color: grey;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.938rem;
   cursor: pointer;
 }
 
 .cancel:hover {
   color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
 }
